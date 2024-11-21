@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your Name | Full-Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jura">
+    
 </head>
 <body>
-    
+    <div id="intro-section">
+        <h3 class="hello">
+            Hello, I'm <span class="name">Max.</span>
+        </h3>                            
+        <h3 class="my-profession">
+            I am a <span class="typing">Full Stack Developer.</span>
+        </h3>
+        <img id="chevron" src="images/chevron.png" alt="">
+    </div>
+    <div id="main-content" style="display: none;">
+        <header>
+            <img src="images/MaxsLogo.png" alt="Logo" class="logo" style="width:150px;height:150px;"></img>
+            <div id="header-text">
+                <h1>Maxwell Batchelor</h1>
+                <p>Full-Stack Developer | Building Modern, Scalable Web Applications</p>
+            </div>
+        </header>
+        <nav>
+            <a class="link" href="#about">About</a>
+            <a class="link" href="#projects">Projects</a>
+            <a class="link" href="#contact">Contact</a>
+        </nav>
+        <div class="container">
+            <section id="about" class="about">
+                <div class="home-section">
+                    <div class="home-img" style="margin-right: 50px; padding: none;">
+                        <div class="img-container">
+                            <img src="images/max.png" alt="">
+                        </div>
+                    </div>
+                    <p>
+                        I'm a front end web developer proficient in multiple languages and frameworks. 
+                        I have a little over 2 years of experience with web design, and love to learn more about it every day!
+                    </p>
+                </div>
+            </section>
+            <section id="projects" class="projects">
+                <h2>Projects</h2>
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A brief description of your project. Highlight the key features and technologies used.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>A brief description of your project. Highlight the key features and technologies used.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+            </section>
+            <section id="contact" class="contact">
+                <h3 class="contact-title">Let's get in <span>touch.</span></h3>
+                <div class="row">
+                    <div class="contact-info-item">
+                        <div class="icon"><a href="mailto:batchelorminquiry@gmail.com"><img src="images/email_.png"></img></a></div>
+                        <h4>Email</h4>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="icon"><a href="https://www.linkedin.com/in/maxbatchelor/"><img src="images/linkedin-box_.png"></img></a></div>
+                        <h4>Linkedin</h4>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="icon"><a href="https://github.com/batchelormaxdb"><img src="images/github-box_.png"></img></a></div>
+                        <h4>GitHub</h4>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="icon"><a href="https://itch.io/profile/mbatchelor"><img src="images/itch-io_.png"></img></a></div>
+                        <h4>Itch.IO</h4>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
