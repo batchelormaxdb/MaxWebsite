@@ -95,7 +95,6 @@ nav a:hover {
 }
 
 #chevron:hover {
-    animation: hoverScale 3s ease-in-out infinite;
     text-decoration: none; 
     color: #8225fc;
     filter: invert(29%) sepia(87%) saturate(6163%) hue-rotate(240deg) brightness(95%) contrast(107%);
