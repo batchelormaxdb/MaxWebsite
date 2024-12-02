@@ -5,18 +5,33 @@
     box-sizing: border-box;
 }
 
+section {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    scroll-snap-align: start;
+}
+section.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+h2 {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+
 body {
     font-family: 'Jura', sans-serif;
     line-height: 1.6;
     color: #333;
-    background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background:  radial-gradient(#272727, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    color: white;
 }
 
 header {
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, #000000, #8225fc);
     color: white;
     padding: 20px;
 }
@@ -82,7 +97,6 @@ nav a {
 }
 
 nav a:hover {
-    transform: scale(1.2); 
     text-decoration: none;
     color: #8225fc; 
 }
@@ -97,16 +111,28 @@ nav a:hover {
 
 #chevron:hover {
     text-decoration: none; 
-    color: #8225fc;
     filter: invert(29%) sepia(87%) saturate(6163%) hue-rotate(240deg) brightness(95%) contrast(107%);
 }
 #main-content {
     opacity: 0;
-    animation: fadeIn 3s forwards;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+}
+
+#main-content.show {
+    opacity: 1;
+    visibility: visible; 
 }
 
 
+.section-box {
+    display: flex;
+    justify-content: space-around;
+}
 #intro-section {
+    position: fixed;  
+    overflow: hidden;
+    max-height: 50vh;
     text-align: center;
     font-size: 40px;
     padding: 50vh 0;
@@ -139,7 +165,6 @@ nav a:hover {
 .hello, .my-profession{
     opacity: 0;
     animation: fadeLine 1s ease-in forwards;
-    margin-bottom: 20px;
     font-family: 'Jura', sans-serif;
     font-size: 2.5rem;
 }
@@ -150,7 +175,8 @@ nav a:hover {
     animation-delay: 2s;
 }
 #chevron {
-    animation-delay: 3s;
+    animation-delay: 12s;
+    width: 100px;
 }
 
 .name {
@@ -303,9 +329,6 @@ nav a:hover {
 /* Skills */
 
 
-.skills-section {
-    margin-top: 40px;
-}
 
 .skills-section h3 {
     font-size: 1.8rem;
@@ -319,7 +342,6 @@ nav a:hover {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    margin-bottom: 30px;
 }
 
 .skills-icons img {
@@ -339,7 +361,6 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    margin-top: 20px;
 }
 
 .project-tile {
@@ -376,19 +397,16 @@ nav a:hover {
     text-transform: capitalize;
 }
 
-.container {
+.padding {
     max-width: 1200px;
-    margin: 30px auto;
+    margin: 200px auto 250px auto;
     padding: 0 20px;
 }
 .container p {
     color: white;
 }
 
-.about, .projects, .contact {
-    margin-bottom: 40px;
 
-}
 .contact .contact-title {
     color: white;
     text-align: center;

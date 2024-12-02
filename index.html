@@ -9,30 +9,26 @@
     
 </head>
 <body>
-    <div id="intro-section">
-        <h3 class="hello">
-            Hello, I'm <span class="name">Max.</span>
-        </h3>                            
-        <h3 class="my-profession">
-            I am a <span class="typing">Full Stack Developer.</span>
-        </h3>
-        <img id="chevron" src="images/chevron.png" alt="">
+    <div class="section-box">
+        <div id="intro-section">
+            <h3 class="hello">
+                Hello, I'm <span class="name">Max.</span>
+            </h3>                            
+            <h3 class="my-profession">
+                I am a <span class="typing">Full Stack Developer.</span>
+            </h3>
+            <img id="chevron" src="images/music.png" alt="">
+        </div>
     </div>
-    <div id="main-content" style="display: none;">
+    <div id="main-content">
         <header>
-            <img src="images/MaxsLogo.png" alt="Logo" class="logo" style="width:150px;height:150px;"></img>
+            <img src="images/guitar.png" alt="Logo" class="logo" style="width:150px;height:150px;"></img>
             <div id="header-text">
                 <h1>Maxwell Batchelor</h1>
                 <p>Full-Stack Developer | Building Modern, Scaleable Applications</p>
             </div>
         </header>
-        <nav>
-            <a class="link" href="#about">About</a>
-            <a class="link" href="#projects">Projects</a>
-            <a class="link" href="#contact">Contact</a>
-        </nav>
-        <div class="container">
-            <section id="about" class="about">
+            <section id="about" class="about fade-in padding">
                 <div class="home-section">
                     <div class="home-img" style="margin-right: 50px; padding: none;">
                         <div class="img-container">
@@ -47,7 +43,8 @@
                     </p>
                 </div>
             </section>
-            <section id="skills" class="skills">
+            <img src="images/FretboardLine.png" alt="">
+            <section id="skills" class="skills fade-in padding">
                 <h2>Education</h2>
                 <div class="timeline">
                     <div class="timeline-item">
@@ -65,6 +62,8 @@
                         </div>
                     </div>
                 </div>
+            </section>
+            <section id="skills" class="skills fade-in padding">
                 <h2>Skills</h2>
                 <div class="skills-section">
                     <h3>Programming Languages</h3>
@@ -98,7 +97,7 @@
                     </div>
                 </div>
             </section>
-            <section id="projects" class="projects">
+            <section id="projects" class="projects fade-in padding">
                 <h2>Projects</h2>
                 <div class="projects-grid">
                     <div class="project-tile" onclick="window.open('https://github.com/batchelormaxdb/MRS')">
@@ -118,7 +117,7 @@
                         <h3>Rock Paper Scissors Game</h3>
                     </div>
             </section>
-            <section id="contact" class="contact">
+            <section id="contact" class="contact fade-in padding">
                 <h3 class="contact-title">Let's get in <span>touch.</span></h3>
                 <div class="row">
                     <div class="contact-info-item">
@@ -139,7 +138,6 @@
                     </div>
                 </div>
             </section>
-        </div>
         <footer>
             <p>&copy; 2024 Max Batchelor. All Rights Reserved.
                  <br> Icons by Tandpfun
