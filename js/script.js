@@ -9,10 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const introSection = document.getElementById("intro-section");
     const mainContent = document.getElementById("main-content");
     const chevronBtn = document.querySelector("#chevron");
+    const cleffBtn = document.querySelector("#cleff");
     window.addEventListener("click", ()=> {
         mainContent.classList.add("show");
         introSection.style.display = "none";
     })
+    
       
 
     chevronBtn.addEventListener("click", () => {
@@ -38,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
           });
         },
-        { threshold: 0.5 } // Section must be at least 50% visible to trigger
+        { threshold: 0.90 } // Section must be at least 50% visible to trigger
       );
     
       // Observe each section
