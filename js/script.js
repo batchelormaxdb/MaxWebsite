@@ -9,10 +9,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const introSection = document.getElementById("intro-section");
     const mainContent = document.getElementById("main-content");
     const chevronBtn = document.querySelector("#chevron");
-    const cleffBtn = document.querySelector("#cleff");
+    const checkbox = document.querySelector(".hamburger input");
+    const navList = document.querySelector("#nav-list");
     window.addEventListener("click", ()=> {
-        mainContent.classList.add("show");
-        introSection.style.display = "none";
+      mainContent.classList.add("show");
+      introSection.style.display = "none";
+    })
+    checkbox.addEventListener("change", ()=> {
+      if (checkbox.checked) {
+        navList.classList.add("show");
+      }
+      else {
+        navList.classList.remove("show");
+      }
     })
     
       
@@ -40,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
           });
         },
-        { threshold: 0.90 } // Section must be at least 50% visible to trigger
+        { threshold: 0.5 }
       );
     
       // Observe each section

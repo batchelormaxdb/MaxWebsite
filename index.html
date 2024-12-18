@@ -21,7 +21,7 @@
         </div>
     </div>
     <div id="main-content">
-        <header>
+        <header id="about">
             <div class="header-section">
                 <div class="header-text">
                     <img src="images/guitar.png" alt="Logo" class="logo" style="width:150px;height:150px;"></img>
@@ -29,22 +29,33 @@
                         <h1>Maxwell Batchelor</h1>
                         <p>Full-Stack Developer | Building Modern, Scaleable Applications</p>
                     </div>
-                    <div class="container">
-                        <label class="hamburger">
-                            <input type="checkbox" />
-                            <svg viewBox="0 0 32 32">
-                              <path
-                                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
-                                class="line line-top-bottom"
-                              ></path>
-                              <path d="M7 16 27 16" class="line"></path>
-                            </svg>
-                          </label>
+                    <div id="container">
+                        <div class="label-container">
+                            <label class="hamburger">
+                                <input type="checkbox" />
+                                <svg viewBox="0 0 32 32">
+                                  <path
+                                    d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+                                    class="line line-top-bottom"
+                                  ></path>
+                                  <path d="M7 16 27 16" class="line"></path>
+                                </svg>
+                            </label>
+                        </div>
+                        <div id="nav-list">
+                            <ul>
+                                <li><a class="list-item" href="#about">About</a></li>
+                                <li><a class="list-item" href="#education">Education</a></li>
+                                <li><a class="list-item" href="#skills">Skills</a></li>
+                                <li><a class="list-item" href="#projects">Projects</a></li>
+                                <li><a class="list-item" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
-            <section id="about" class="about fade-in padding">
+            <section class="about fade-in padding">
                 <div class="home-section">
                     <div class="home-img" style="margin-right: 50px; padding: none;">
                         <div class="img-container">
@@ -55,12 +66,12 @@
                         I'm a full stack developer proficient in multiple languages and frameworks. 
                         I have a little over 3 years of experience in web design and application development, and love to learn more them it every day!
                         Around the age of 12, I fell in love with computers and became enthralled with learning about them. Growing up in the Pacific Northwest, I have had a significant amount of exposure to new technology, and it has made a great impact on myself as a tech user and as a developer. In my 20's I went to college to pursue my love of computers and graduated from Clark College in Vancouver, WA with an associate's degree in Computer Science. I am now attending Western Governor's University to recieve my Bachelor's degree.
-                        Feel free to browse my portfolio and see what I have created! If you have any questions, or would like to get in touch, <span><a href="mailto:batchelorminquiry@gmail.com" style="text-decoration: none; color: #8225fc;">contact me.</a></span>
+                        Feel free to browse my portfolio and see what I have created! If you have any questions, or would like to get in touch, <span><a href="mailto:batchelorminquiry@gmail.com" id="contact-span">contact me.</a></span>
                     </p>
                 </div>
             </section>
-            <section id="skills" class="skills fade-in padding">
-                <h2>Education</h2>
+            <section  class="skills fade-in padding">
+                <h2 id="education">Education</h2>
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-content bachelor">
@@ -78,43 +89,43 @@
                     </div>
                 </div>
             </section>
-            <section id="skills" class="skills fade-in padding">
-                <h2>Skills</h2>
+            <section  class="skills fade-in padding">
+                <h2 id="skills">Skills</h2>
                 <div class="skills-section">
                     <h3>Programming Languages</h3>
                     <div class="skills-icons">
-                        <img src="https://skillicons.dev/icons?i=js" alt="JavaScript">
-                        <img src="https://skillicons.dev/icons?i=java" alt="Java">
-                        <img src="https://skillicons.dev/icons?i=html" alt="HTML">
-                        <img src="https://skillicons.dev/icons?i=css" alt="CSS">
-                        <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL">
-                        <img src="https://skillicons.dev/icons?i=bash" alt="Bash">
-                        <img src="https://skillicons.dev/icons?i=cs" alt="C#">
+                        <img src="https://skillicons.dev/icons?i=js" id="JavaScript">
+                        <img src="https://skillicons.dev/icons?i=java" id="Java">
+                        <img src="https://skillicons.dev/icons?i=html" id="HTML">
+                        <img src="https://skillicons.dev/icons?i=css" id="CSS">
+                        <img src="https://skillicons.dev/icons?i=mysql" id="MySQL">
+                        <img src="https://skillicons.dev/icons?i=bash" id="Bash">
+                        <img src="https://skillicons.dev/icons?i=cs" id="C">
                     </div>
             
                     <h3>Frameworks</h3>
                     <div class="skills-icons">
-                        <img src="https://skillicons.dev/icons?i=django" alt="Django">
-                        <img src="https://skillicons.dev/icons?i=express" alt="Express">
-                        <img src="https://skillicons.dev/icons?i=nodejs" alt="NodeJS">
-                        <img src="https://skillicons.dev/icons?i=dotnet" alt=".NET">
-                        <img src="https://skillicons.dev/icons?i=linux" alt="Linux">
+                        <img src="https://skillicons.dev/icons?i=django" id="Django">
+                        <img src="https://skillicons.dev/icons?i=express" id="Express">
+                        <img src="https://skillicons.dev/icons?i=nodejs" id="NodeJS">
+                        <img src="https://skillicons.dev/icons?i=dotnet" id="NET">
+                        <img src="https://skillicons.dev/icons?i=linux" id="Linux">
                         
                     </div>
             
                     <h3>Applications</h3>
                     <div class="skills-icons">
-                        <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code">
-                        <img src="https://skillicons.dev/icons?i=visualstudio" alt="Visual Studio">
-                        <img src="https://skillicons.dev/icons?i=godot" alt="Godot">
-                        <img src="https://skillicons.dev/icons?i=powershell" alt="Powershell">
+                        <img src="https://skillicons.dev/icons?i=vscode" id="VSCode">
+                        <img src="https://skillicons.dev/icons?i=visualstudio" id="VisualStudio">
+                        <img src="https://skillicons.dev/icons?i=godot" id="Godot">
+                        <img src="https://skillicons.dev/icons?i=powershell" id="Powershell">
                         
                     </div>
                 </div>
             </section>
-            <section id="projects" class="projects fade-in padding">
-                <h2>Projects</h2>
-                <div class="projects-grid">
+            <section style="margin-bottom: 100px;"  class="projects fade-in padding">
+                <h2 id="projects">Projects</h2>
+                <div class="projects-grid" >
                     <div class="project-tile" onclick="window.open('https://github.com/batchelormaxdb/MRS')">
                         <img src="images/project-1.png" alt="Project 1">
                         <h3>Mock Reservation System</h3>
@@ -132,31 +143,31 @@
                         <h3>Rock Paper Scissors Game</h3>
                     </div>
             </section>
-            <section id="contact" class="contact fade-in padding">
-                <h3 class="contact-title">Let's <span>jam together.</span></h3>
+            <section  class="contact fade-in padding">
+                <h3 id="contact" class="contact-title">Let's <span>jam together.</span></h3>
                 <div class="row">
                     <div class="card">
-                        <a href="#" class="socialContainer containerOne">
+                        <a href="https://github.com/batchelormaxdb" class="socialContainer containerOne">
                           <svg class="socialSvg gitHub" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="75" height="75" viewBox="0,0,300,300"
                           style="fill:#FFFFFF;">
                           <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(6.5,6.5)"><path d="M24,4c-4.03679,0 -7.8075,1.20118 -10.95312,3.26367c-0.46605,0.28589 -0.73965,0.80269 -0.71409,1.34885c0.02556,0.54615 0.34622,1.03515 0.83693,1.27627c0.49071,0.24112 1.07374,0.19618 1.52169,-0.1173c2.67438,-1.75351 5.86539,-2.77148 9.30859,-2.77148c9.40629,0 17,7.59371 17,17c0,2.70775 -0.63032,5.25732 -1.75195,7.52539c-0.36729,0.74267 -0.06298,1.64247 0.67969,2.00977c0.74267,0.36729 1.64247,0.06298 2.00977,-0.67969c1.32037,-2.66993 2.0625,-5.68121 2.0625,-8.85547c0,-11.02771 -8.97229,-20 -20,-20zM15.80078,13.07617c-1.328,2.126 -0.52722,4.45164 -0.07422,5.43164c-1.089,1.281 -1.72656,2.82619 -1.72656,4.49219c0,3.78 3.28055,6.93939 7.68555,7.77539c-1.309,0.673 -2.28594,1.89686 -2.58594,3.38086h-1.31641c-1.297,0 -1.80095,-0.52702 -2.50195,-1.41602c-0.692,-0.889 -1.43608,-1.48638 -2.33008,-1.73437c-0.482,-0.051 -0.80672,0.31563 -0.38672,0.64063c1.419,0.966 1.51694,2.54703 2.08594,3.58203c0.518,0.932 1.5793,1.77148 2.7793,1.77148h1.57031v3.25195c-6.95684,-2.1295 -12,-8.58685 -12,-16.25195c0,-2.6856 0.61959,-5.21657 1.72461,-7.4707c0.23099,-0.45517 0.21469,-0.99655 -0.04326,-1.437c-0.25795,-0.44045 -0.72215,-0.71952 -1.23213,-0.74073c-0.60195,-0.02485 -1.16036,0.31282 -1.41797,0.85742c-1.30098,2.65387 -2.03125,5.64261 -2.03125,8.79102c0,11.02771 8.97229,20 20,20c4.47291,0 8.61815,-1.47414 11.95117,-3.96094c0.42993,-0.3206 0.65613,-0.84623 0.5934,-1.37885c-0.06274,-0.53262 -0.40489,-0.9913 -0.89754,-1.20323c-0.49265,-0.21193 -1.06095,-0.1449 -1.49078,0.17583c-1.53862,1.14798 -3.28013,2.03012 -5.15625,2.60742v-5.10352c0,-1.908 -1.09755,-3.54533 -2.68555,-4.36133c4.405,-0.836 7.68555,-3.99539 7.68555,-7.77539c0,-1.574 -0.57659,-3.03839 -1.55859,-4.27539c0.442,-1.368 0.92981,-3.77144 -0.24219,-5.64844c-2.251,0 -3.72955,1.54663 -4.43555,2.51563c-1.162,-0.378 -2.43067,-0.5918 -3.76367,-0.5918c-1.333,0 -2.60167,0.2138 -3.76367,0.5918c-0.706,-0.969 -2.18355,-2.51562 -4.43555,-2.51562z"></path></g></g>
                           </svg>
                         </a>
                         
-                        <a href="#" class="socialContainer containerTwo">
+                        <a href="https://maxdesarrollar.itch.io/" class="socialContainer containerTwo">
                           <svg class="socialSvg itchIo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="75" height="75" viewBox="0,0,300,300"
                             style="fill:#FFFFFF;">
                             <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(6.5,6.5)"><path d="M23.98047,5.62305c-1.65485,0 -3.4949,0.0084 -5.29102,0.02344c-0.54,-0.00155 -1.03916,0.28725 -1.30697,0.75617c-0.26781,0.46892 -0.26293,1.04558 0.01278,1.5099c0.2757,0.46432 0.77968,0.74462 1.31958,0.73394c1.78788,-0.01497 3.62047,-0.02344 5.26563,-0.02344c5.12559,-0.00096 8.64845,0.0395 13.49023,0.20313c0.5297,0.37445 1.60905,1.3539 2.50391,2.41602c0.48473,0.57533 0.92028,1.15323 1.20898,1.59766c0.2887,0.44443 0.33497,0.98112 0.31641,0.42773v1.58008c0,0.56519 -0.28739,1.18881 -0.75195,1.66016c-0.46456,0.47135 -1.07218,0.71875 -1.42969,0.71875c-1.3502,0 -2.35547,-0.93452 -2.35547,-2.15625h-3c0,1.25164 -0.94951,2.15625 -2.29883,2.15625c-1.34884,0 -2.24023,-0.87894 -2.24023,-2.15625c-0.0116,-0.82016 -0.67976,-1.47894 -1.5,-1.47894c-0.82024,0 -1.4884,0.65878 -1.5,1.47894c0,1.19995 -1.05362,2.15625 -2.4043,2.15625h-0.03906c-1.3502,0 -2.40234,-0.95675 -2.40234,-2.15625c-0.0116,-0.82016 -0.67976,-1.47894 -1.5,-1.47894c-0.82024,0 -1.4884,0.65878 -1.5,1.47894c0,1.2787 -0.89151,2.15625 -2.24219,2.15625c-1.3502,0 -2.29687,-0.90552 -2.29688,-2.15625c-0.0116,-0.82016 -0.67976,-1.47894 -1.5,-1.47894c-0.82024,0 -1.4884,0.65878 -1.5,1.47894c0,1.22314 -1.00675,2.15625 -2.35742,2.15625c-0.35831,0 -0.96507,-0.24742 -1.42969,-0.71875c-0.46462,-0.47133 -0.75195,-1.09497 -0.75195,-1.66016v-1.58203c-0.01722,0.54669 0.02702,0.01248 0.3125,-0.43164c0.28548,-0.44412 0.71705,-1.02086 1.19727,-1.5957c0.89079,-1.06633 1.97577,-2.05674 2.49805,-2.42383c0.50761,-0.02991 1.32678,-0.06545 2.60742,-0.0918c0.53595,-0.01109 1.02526,-0.30729 1.28359,-0.77701c0.25833,-0.46972 0.24641,-1.04157 -0.03125,-1.50012c-0.27766,-0.45855 -0.77889,-0.73411 -1.31484,-0.72287c-1.51655,0.0312 -2.62867,0.06333 -3.24609,0.11719c-0.2243,0.01985 -0.44125,0.08995 -0.63477,0.20508c-1.21014,0.7182 -2.37902,1.96972 -3.46484,3.26953c-0.54291,0.6499 -1.03392,1.29904 -1.41797,1.89648c-0.38405,0.59744 -0.75634,0.9203 -0.78906,1.95898c-0.00026,0.01627 -0.00026,0.03255 0,0.04883v1.62891c0,1.49981 0.67686,2.8137 1.61523,3.76563c0.28162,0.28569 0.59844,0.53254 0.92969,0.75586c-0.1178,1.4976 -0.18793,2.91478 -0.20898,3.98438c-0.00011,0.01042 -0.00011,0.02083 0,0.03125v0.00586c-0.00397,0.64251 -0.00678,1.17226 -0.00977,1.9043c-0.00004,0.00651 -0.00004,0.01302 0,0.01953c0.01643,1.84701 -0.07995,4.98406 0.08398,7.95703c0.08197,1.48648 0.22611,2.93645 0.50586,4.22266c0.27975,1.28621 0.63411,2.4387 1.52344,3.3457c0.1996,0.20331 0.45297,0.34558 0.73047,0.41016c0.76811,0.17919 1.64339,0.32932 2.61328,0.45898c0.53851,0.08681 1.08171,-0.12552 1.41859,-0.55452c0.33689,-0.429 0.41436,-1.00705 0.20234,-1.50962c-0.21202,-0.50257 -0.68013,-0.85045 -1.2225,-0.90852c-0.66393,-0.08876 -1.19092,-0.1953 -1.71875,-0.30078c-0.17216,-0.26816 -0.42714,-0.71528 -0.61523,-1.58008c-0.2241,-1.03036 -0.36645,-2.35328 -0.44336,-3.74805c-0.15343,-2.78257 -0.06115,-5.82536 -0.07812,-7.80078v-0.01367c-0.00001,-0.0015 0.00001,-0.00436 0,-0.00586c0.00295,-0.72447 0.00582,-1.25029 0.00977,-1.88672c0.00037,-0.00354 -0.00005,-0.00721 0,-0.00977c0.01737,-0.86825 0.07315,-1.99416 0.1543,-3.17969c1.36729,-0.08006 2.61678,-0.67939 3.53906,-1.60352c0.97513,0.99044 2.32414,1.61914 3.80664,1.61914c1.4771,0 2.8092,-0.62972 3.76953,-1.61719c1.00365,0.99352 2.38476,1.61719 3.875,1.61719h0.03906c1.49095,0 2.87259,-0.6227 3.87695,-1.61719c0.9601,0.98755 2.29057,1.61719 3.76758,1.61719c1.48289,0 2.83319,-0.62769 3.80859,-1.61914c0.99134,0.99303 2.35809,1.61914 3.8457,1.61914c1.39349,0 2.62822,-0.66138 3.56641,-1.61328c0.93819,-0.9519 1.61523,-2.26581 1.61523,-3.76562v-1.62891c0.00029,-0.01693 0.00029,-0.03386 0,-0.05078c-0.03506,-1.04539 -0.41289,-1.36576 -0.80078,-1.96289c-0.38789,-0.59713 -0.88254,-1.24511 -1.42969,-1.89453c-1.0943,-1.29884 -2.2698,-2.54973 -3.47461,-3.26562c-0.21693,-0.12864 -0.46278,-0.20052 -0.71484,-0.20898c-5.16932,-0.18164 -8.77066,-0.21389 -14.09961,-0.21289zM18.10352,23.12305c-0.49,0 -2.45036,0.0028 -3.81836,3.8418l-1.4668,5.26758c-1.088,3.917 0.34667,4.01263 2.13867,4.01563c2.658,-0.099 4.13086,-2.02898 4.13086,-3.95898c1.47,0.241 3.18634,0.36328 4.90234,0.36328c1.716,0 3.4333,-0.12128 4.9043,-0.36328c0,1.929 1.47091,3.86098 4.12891,3.95898c1.791,-0.002 3.22767,-0.09663 2.13867,-4.01562l-1.46875,-5.26758c-1.367,-3.839 -3.32931,-3.83984 -3.82031,-3.83984v0.00195h-0.00195c-1.038,0.003 -1.95856,-0.00186 -3.10156,1.24414c-0.9,-0.094 -1.84025,-0.14162 -2.78125,-0.14062c-0.941,-0.001 -1.88125,0.04663 -2.78125,0.14063c-1.141,-1.247 -2.06552,-1.24605 -3.10352,-1.24805zM40.62109,23.20313c-0.82769,0.01717 -1.48501,0.70159 -1.46875,1.5293c0.001,0.18173 0.00091,0.37247 0.00195,0.58008c-0.01646,1.97453 0.07543,5.01448 -0.07812,7.79688c-0.07697,1.39468 -0.21724,2.71965 -0.44141,3.75c-0.18398,0.84561 -0.43016,1.26675 -0.60352,1.54492c-3.02799,0.61402 -8.47891,0.97077 -14.04102,0.97266c-1.77066,-0.00099 -3.53885,-0.03246 -5.22852,-0.0957c-0.53931,-0.02605 -1.05102,0.23972 -1.33985,0.69592c-0.28883,0.45619 -0.31023,1.03241 -0.05603,1.50876c0.25421,0.47636 0.74479,0.77935 1.28455,0.79337c1.73033,0.06476 3.53255,0.09665 5.33789,0.09766c0.00065,0 0.0013,0 0.00195,0c0.00065,0 0.0013,0 0.00195,0c5.95811,-0.002 11.82373,-0.30978 15.31836,-1.12305c0.27842,-0.06478 0.53253,-0.20776 0.73242,-0.41211c0.88929,-0.90696 1.24361,-2.05952 1.52344,-3.3457c0.27983,-1.28618 0.42383,-2.73426 0.50586,-4.2207c0.16406,-2.97289 0.06608,-6.11011 0.08203,-7.95703c0.00005,-0.00716 0.00005,-0.01432 0,-0.02148c-0.001,-0.20839 -0.00091,-0.39976 -0.00195,-0.58203c0.00321,-0.40531 -0.15772,-0.79468 -0.44617,-1.07945c-0.28844,-0.28476 -0.67984,-0.44069 -1.08508,-0.43227zM23.98633,25.73047c0,0 2.98063,2.73794 3.51563,3.71094l-1.87891,-0.07812v1.88867c0,0.08 -3.2793,0.08 -3.2793,0v-1.88867l-1.87305,0.07813c0.535,-0.973 3.51363,-3.70794 3.51563,-3.71094z"></path></g></g>
                             </svg> </a>
                           
-                        <a href="#" class="socialContainer containerThree">
+                        <a href="https://www.linkedin.com/in/maxbatchelor" class="socialContainer containerThree">
                           <svg class="socialSvg linkdinSvg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="75" height="75" viewBox="0,0,300,300"
                           style="fill:#FFFFFF;">
                           <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(6.5,6.5)"><path d="M24,4c-2.68218,0 -5.2485,0.5299 -7.58984,1.49023c-0.5046,0.19739 -0.86353,0.65155 -0.93901,1.1881c-0.07547,0.53655 0.14425,1.0721 0.57481,1.40104c0.43056,0.32894 1.00504,0.40013 1.50287,0.18626c1.98865,-0.81567 4.16335,-1.26562 6.45117,-1.26562c9.40629,0 17,7.59371 17,17c0,4.84912 -2.02013,9.20515 -5.26758,12.30273c-0.4054,0.36568 -0.58013,0.92274 -0.4562,1.45445c0.12393,0.53171 0.52694,0.95412 1.05225,1.10287c0.52531,0.14876 1.08996,0.00038 1.47427,-0.3874c3.81655,-3.64041 6.19727,-8.78777 6.19727,-14.47266c0,-11.02771 -8.97229,-20 -20,-20zM10.14648,10.25195c-0.44184,-0.00345 -0.86273,0.18806 -1.15039,0.52344c-3.10796,3.52293 -4.99609,8.16254 -4.99609,13.22461c0,11.02771 8.97229,20 20,20c2.34235,0 4.59494,-0.40463 6.6875,-1.14648c0.50525,-0.17894 0.87665,-0.61385 0.97427,-1.14089c0.09762,-0.52704 -0.09337,-1.06612 -0.50101,-1.41415c-0.40764,-0.34803 -0.97,-0.45213 -1.47521,-0.27308c-1.77745,0.63014 -3.6879,0.97461 -5.68555,0.97461c-9.40629,0 -17,-7.59371 -17,-17c0,-4.31793 1.60205,-8.24316 4.24609,-11.24023c0.39722,-0.43805 0.50004,-1.06857 0.26259,-1.61012c-0.23746,-0.54155 -0.77089,-0.89309 -1.3622,-0.89769zM15.5,13c-1.38071,0 -2.5,1.11929 -2.5,2.5c0,1.38071 1.11929,2.5 2.5,2.5c1.38071,0 2.5,-1.11929 2.5,-2.5c0,-1.38071 -1.11929,-2.5 -2.5,-2.5zM14,20c-0.553,0 -1,0.447 -1,1v13c0,0.553 0.447,1 1,1h3c0.553,0 1,-0.447 1,-1v-13c0,-0.553 -0.447,-1 -1,-1zM21,20c-0.553,0 -1,0.447 -1,1v13c0,0.553 0.447,1 1,1h3c0.553,0 1,-0.447 1,-1v-7.5c0,-1.379 1.121,-2.5 2.5,-2.5c1.379,0 2.5,1.121 2.5,2.5v7.5c0,0.553 0.447,1 1,1h3c0.553,0 1,-0.447 1,-1v-8c0,-3.309 -2.691,-6 -6,-6c-1.538,0 -2.937,0.58602 -4,1.54102v-0.54102c0,-0.553 -0.447,-1 -1,-1z"></path></g></g>
                           </svg>
                         </a>
                         
-                        <a href="#" class="socialContainer containerFour">
+                        <a href="mailto:batchelorminquiry@gmail.com" class="socialContainer containerFour">
                           <svg class="socialSvg email" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48"
                           style="fill:#FFFFFF;">
                           <path d="M 13.5 6 C 9.3754991 6 6 9.3754991 6 13.5 L 6 16.064453 A 1.50015 1.50015 0 1 0 9 16.064453 L 9 13.5 C 9 10.996501 10.996501 9 13.5 9 L 34.5 9 C 37.003499 9 39 10.996501 39 13.5 L 39 34.5 C 39 37.003499 37.003499 39 34.5 39 A 1.50015 1.50015 0 1 0 34.5 42 C 38.624501 42 42 38.624501 42 34.5 L 42 13.5 C 42 9.3754991 38.624501 6 34.5 6 L 13.5 6 z M 13.5 14.984375 C 12.136406 14.984375 11 16.120781 11 17.484375 L 11 30.515625 C 11 31.879219 12.136406 33.015625 13.5 33.015625 L 23.382812 33.015625 L 29.638672 33.015625 L 34.5 33.015625 C 35.863594 33.015625 37 31.879219 37 30.515625 L 37 17.484375 C 37 16.120781 35.863594 14.984375 34.5 14.984375 L 13.5 14.984375 z M 14 17.984375 L 31.662109 17.984375 L 24.886719 23.501953 A 1.50015 1.50015 0 0 0 24.886719 23.503906 C 24.359043 23.933718 23.624792 23.931773 23.097656 23.501953 L 18.716797 19.929688 A 1.50015 1.50015 0 1 0 16.820312 22.253906 L 18.267578 23.435547 L 14 27.705078 L 14 17.984375 z M 34 19.951172 L 34 27.707031 L 29.722656 23.435547 L 34 19.951172 z M 7.4765625 20.287109 A 1.50015 1.50015 0 0 0 6 21.808594 L 6 34.5 C 6 38.624501 9.3754991 42 13.5 42 L 27.53125 42 A 1.50015 1.50015 0 1 0 27.53125 39 L 13.5 39 C 10.996501 39 9 37.003499 9 34.5 L 9 21.808594 A 1.50015 1.50015 0 0 0 7.4765625 20.287109 z M 27.384766 25.339844 L 32.068359 30.015625 L 29.638672 30.015625 L 23.382812 30.015625 L 15.931641 30.015625 L 20.603516 25.341797 L 21.201172 25.828125 C 22.818036 27.146352 25.162925 27.146313 26.78125 25.828125 L 26.78125 25.830078 L 27.384766 25.339844 z"></path>

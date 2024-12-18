@@ -35,6 +35,16 @@ header {
 span {
     color: #8225fc;
 }
+#contact-span {
+    text-decoration: none; 
+    color: #8225fc;
+}
+#contact-span:hover {
+    font-size: 110%;
+    color: #bf25fc;
+    transition: 0.3s ease-in;
+    text-shadow: rgb(189, 67, 219) 1px 0 10px;
+}
 
 header h1 {
     font-size: 2.5rem;
@@ -98,9 +108,44 @@ header p {
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42;
 }
-.container {
-    padding-left: 50vw;
+#container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80vw;
+    margin-top: 20vh;
+    position: fixed;
 }
+#nav-list {
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    visibility: hidden;
+}
+#nav-list.show {
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    visibility: visible;
+    animation: fadeInto 1s forwards;
+}
+.label-container {
+    width: 4vw;
+}
+#nav-list li {
+    list-style-type: none;
+    padding: 10px;
+}
+.list-item {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+.list-item:hover {
+    font-size: 31px;
+    color: #8225fc;
+    transition: 0.2s ease-in;
+}
+
 
 .logo-container {
     position: absolute;
@@ -120,16 +165,6 @@ header p {
     animation: wiggle 0.5s ease-in-out;
 }
 
-.flushing-icon {
-    cursor: pointer;
-}
-.flushing-icon.animate {
-    animation: flush-spin 0.5s ease-in-out;
-}
-.flushing-icon.fade {
-    animation: fadeInto 0.5s ease-in-out;
-    cursor: default;
-}
 @keyframes bounce_613 {
     40% {
       transform: scale(1.4);
@@ -148,16 +183,6 @@ header p {
     }
   }
 
-@keyframes flush-spin {
-    0% {
-      transform: scale(1) rotate(0deg);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(0) rotate(360deg);
-      opacity: 0;
-    }
-}
 
 @keyframes wiggle {
     0% { transform: rotate(0deg); }
@@ -362,6 +387,11 @@ nav a:hover {
     position: relative;
     margin: 20px 0;
 }
+.timeline-content:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease-in;
+    background: linear-gradient(to left top, #0072b1,#01344d);
+}
 
 .timeline-content {
     position: relative;
@@ -448,12 +478,56 @@ nav a:hover {
     width: 64px;
     height: 64px;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    border-radius: 15px;
 }
 
-.skills-icons img:hover {
+.skills-icons  img#JavaScript:hover {
     transform: scale(1.1);
     opacity: 0.9;
+    box-shadow: 0 4px 6px rgb(255, 240, 156);
 }
+.skills-icons  img#Java:hover,img#MySQL:hover,img#Bash:hover,img#Express:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    box-shadow: 0 4px 6px hsl(0, 0%, 100%);
+}
+.skills-icons  img#HTML:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    box-shadow: 0 4px 6px rgb(248, 170, 133);
+}
+.skills-icons  img#CSS:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    box-shadow: 0 4px 6px rgb(0, 255, 234);
+}
+
+.skills-icons  img#C:hover,img#VisualStudio:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    box-shadow: 0 4px 6px rgb(238, 150, 241);
+}
+.skills-icons  img#NodeJS:hover,img#Django:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    box-shadow: 0 4px 6px rgb(81, 255, 0);
+}
+.skills-icons  img#NET:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    box-shadow: 0 4px 6px rgb(157, 107, 250);
+}
+.skills-icons  img#Linux:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    box-shadow: 0 4px 6px rgb(255, 217, 0);
+}
+.skills-icons  img#VSCode:hover,img#Godot:hover,img#Powershell:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    box-shadow: 0 4px 6px rgb(0, 183, 255);
+}
+
 /*End*/
 
 /* Projects */
@@ -502,10 +576,12 @@ nav a:hover {
     margin: 200px auto 200px auto;
     padding: 0 20px;
 }
-.container p {
+.container {
     color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
 }
-
 
 .contact .contact-title {
     color: white;
@@ -604,7 +680,12 @@ h2 {
 .about p {
     font-size: 1.1rem;
 }
-
+.projects {
+    padding-bottom: 500px;
+}
+.projects-grid {
+    padding-top: 100px;
+}
 .projects .project-card {
     background: #f4f4f4;
     border-radius: 8px;
@@ -629,14 +710,15 @@ h2 {
     font-weight: bold;
 }
 
+
+
 footer {
-    background: #222;
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 30px;
 }
 
 footer p {
+    background-color: none;
     font-size: 0.9rem;
 }
