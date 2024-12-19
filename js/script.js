@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
       mainContent.classList.add("show");
       introSection.style.display = "none";
     })
+    window.addEventListener("wheel", ()=> {
+      mainContent.classList.add("show");
+      introSection.style.display = "none";
+    })
     checkbox.addEventListener("change", ()=> {
       if (checkbox.checked) {
         navList.classList.add("show");
